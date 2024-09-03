@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: SUSE;
+    height: 100vw;
+    background-image: radial-gradient(#15212D, #131A24);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header {
+    background-color: #0c1118;
+    box-shadow: #000;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover{
+    color: #6ee2ff;
+    text-decoration: underline;
+}
+
+main {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: #000;
+    flex-direction: column;
+    
+}
+
+.projectsBox img{
+    height: 400px;
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position: fixed;
+    bottom: 0;
+    background-color: #0c1118;
+}
