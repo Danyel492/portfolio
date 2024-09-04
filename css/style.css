@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
+body,
+html {
     font-family: SUSE;
-    height: 100vw;
     background-image: radial-gradient(#15212D, #131A24);
     background-repeat: no-repeat;
     color: white;
+    height: 100%;
 }
 
 header {
@@ -33,32 +35,63 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
 }
-nav a:hover{
+
+nav a:hover {
     color: #6ee2ff;
     text-decoration: underline;
 }
 
 main {
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-shadow: #000;
     flex-direction: column;
-    
+    /* border: 1px solid red; */
 }
 
-.projectsBox img{
-    height: 400px;
+.home {
+    position: absolute;
+    top: 45%;
+    text-align: center;
 }
+.projetos {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+}
+.contato {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+
+/* .caixa1 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    } */
+
+/* .caixa1 {
+        background-image: radial-gradient(#15212D, #131A24);
+        } */
+.projectsBox img {
+    height: 400px;
+    padding: 10px;
+}
+
 
 footer {
     width: 100vw;
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
+    background-color: #0c1118;
     position: fixed;
     bottom: 0;
-    background-color: #0c1118;
 }
