@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+body, html, ul, li, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --ciano: #6ee2ff;
+    --branco: #fff;
+}
+
+
+body {
+    display: flex;
+    font-family: SUSE;
+    background-image: url('../img/centro-main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    justify-content: center;
+    background-color: #15202c;
+}
+
+#container {
+    width: 100%;
+    min-width: 500px;
+    max-width: 1400px;
+
+}
+
+a {
+    color: white;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--ciano)
+}
+
+main {
+    height: 86vh;
+    background-position: center;
+    }
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C1118;
+    height: 50px;
+
+}

@@ -1,0 +1,53 @@
+@import url(global.css);
+
+
+header {
+    min-height: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0C1118;
+    background-size: cover;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20%;
+
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    padding: 25px;
+}
+
+main {
+    display: flex;
+    align-content: center;
+}
+
+section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectsBox img {
+    height: 500px;
+}
