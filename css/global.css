@@ -20,6 +20,7 @@ body {
     background-image: url('../img/centro-main.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 80vw;
     color: white;
     justify-content: center;
     background-color: #15202c;
@@ -54,5 +55,19 @@ footer {
     justify-content: center;
     background-color: #0C1118;
     height: 50px;
+    position: fixed;
+    bottom: 0;
 
 }
+.button {
+    background-color: var(--ciano);
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    
+}
+    .button:hover{
+        background-color: #25D366;
+        cursor: pointer;
+        border: 2px solid white;
+    }
