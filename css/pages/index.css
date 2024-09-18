@@ -22,5 +22,30 @@ section {
 }
 
 #hallo {
+
+    width: 30px;
+    animation: animacaoHallo 0.5s;
+    animation-iteration-count: 12;
+    animation-direction: alternate;
   
+}
+
+@keyframes animacaoHallo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(50deg);
+    }
+}
+
+.saldacao {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.saldacao span {
+    font-size: 30px;
 }
