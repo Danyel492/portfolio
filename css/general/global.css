@@ -1,6 +1,11 @@
+/* Arquivo global.css para colocar as configuraçõs gerais de todas as paginas*/
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-body, html, ul, li, a{
+body,
+html,
+ul,
+li,
+a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +22,7 @@ body, html, ul, li, a{
 body {
     display: flex;
     font-family: SUSE;
-    background-image: url('../img/centro-main.png');
+    background-image: url('../../img/centro-main.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80vw;
@@ -30,6 +35,9 @@ body {
     width: 100%;
     min-width: 500px;
     max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -46,7 +54,7 @@ nav a:hover {
 main {
     height: 86vh;
     background-position: center;
-    }
+}
 
 footer {
     width: 100%;
@@ -55,19 +63,57 @@ footer {
     justify-content: center;
     background-color: #0C1118;
     height: 50px;
-    position: fixed;
-    bottom: 0;
+    
 
 }
+
 .button {
     background-color: var(--ciano);
     padding: 20px 50px;
     border-radius: 10px;
     border: 2px solid transparent;
-    
+
 }
-    .button:hover{
-        background-color: #25D366;
-        cursor: pointer;
-        border: 2px solid white;
-    }
+
+.button:hover {
+    background-color: #25D366;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+header {
+    min-height: 80px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0C1118;
+    background-size: cover;
+}
+
+#logo {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    padding: 25px;
+}

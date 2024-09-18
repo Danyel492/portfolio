@@ -1,0 +1,26 @@
+/* Arquivo index.css para colocar configurações específicas para cada página */
+@import url(global.css);
+
+
+
+
+main {
+    display: flex;
+    align-content: center;
+}
+
+section {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectsBox img {
+    height: 500px;
+}
+
+#hallo {
+  
+}
