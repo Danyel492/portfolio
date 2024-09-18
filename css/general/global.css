@@ -16,6 +16,7 @@ a {
 :root {
     --ciano: #6ee2ff;
     --branco: #fff;
+    --laranja: #F97B22;
 }
 
 
@@ -31,15 +32,6 @@ body {
     background-color: #15202c;
 }
 
-#container {
-    width: 100%;
-    min-width: 500px;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
 
 a {
     color: white;
@@ -84,7 +76,7 @@ footer {
 header {
     min-height: 80px;
     height: auto;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -116,4 +108,18 @@ nav ul {
 
 .nav-items {
     padding: 25px;
+}
+.nav-items a {
+    /* background-color: green; */
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+.nav-items a:hover {
+    background-color: #131b25;
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
