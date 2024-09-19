@@ -13,6 +13,7 @@ a {
     text-decoration: none;
 }
 
+
 :root {
     --ciano: #6ee2ff;
     --branco: #fff;
@@ -22,6 +23,7 @@ a {
 
 body {
     display: flex;
+    flex-direction: column;
     font-family: SUSE;
     background-image: url('../../img/centro-main.png');
     background-repeat: no-repeat;
@@ -44,8 +46,11 @@ nav a:hover {
 }
 
 main {
-    height: 86vh;
-    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 footer {
@@ -54,9 +59,8 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #0C1118;
-    height: 50px;
-    
-
+    height: 50px;   
+    bottom: 0;
 }
 
 .button {
@@ -122,4 +126,13 @@ nav ul {
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
+}
+.sectionHome {
+    /* border: 1px solid red; */
+    height: 85vh;
+
+}
+.projetos {
+    padding: 0 50px;
+    text-align: center;
 }

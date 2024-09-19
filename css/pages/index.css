@@ -9,7 +9,7 @@ main {
     align-content: center;
 }
 
-section {
+.sectionHome{
     height: auto;
     display: flex;
     align-items: center;
