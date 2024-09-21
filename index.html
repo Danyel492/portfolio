@@ -32,12 +32,38 @@
                         </a>
                     </li>
                     <li class="nav-items">
-                        <a href="contatos.html">
-                            contatos
-                        </a>
+                        <a id="contatoItem" href="https://wa.me/5518981280390">contato</a>
+                            
+                        
                     </li>
                 </ul>
+                <div id="hamburguerIcon">
+                    <input type="checkbox" id="hamburguerCheck" onchange="menuShow()">
+                    <label for="hamburguerCheck">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
             </nav>
+            <div class="mobileMenu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html">
+                        home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="projetos.html">
+                            projetos
+                        </a>
+                    </li>
+                    <li class="contatoItem">
+                        <a href="https://wa.me/5518981280390">contato</a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <main>
             <section class="sectionHome">
@@ -45,14 +71,27 @@
                     <img id="hallo" src="img/mao.png">
                     <span>Bem vindos!</span>
                 </div>
-                <p class="desculpe">... desculpe o transtorno. Estamos em desenvolvimento ...</p>
+                <p class="desculpe">... desculpe o transtorno. Estamos e manutenção ...</p>
                 <h3>Volte em breve</h3>
             </section>
+           
         </main>
         <footer>
             <span>&copy; DanyelDev.com | Todos os direitos reservados</span>
         </footer>
     </div> <!-- FIM CONTAINER -->
+    <script>
+        function menuShow() {
+            let bottonMenu = document.getElementById('hamburguerCheck');
+            let menuMobile = document.querySelector('.mobileMenu')
+            if (bottonMenu.checked) {
+                menuMobile.classList.add('openMenu')
+            }
+            else {
+                menuMobile.classList.remove('openMenu')
+            }
+        }
+    </script>
 </body>
 
 </html>

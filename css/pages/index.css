@@ -10,11 +10,17 @@ main {
 }
 
 .sectionHome{
+    width: 90%;
+    max-width: 1640px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url('../../img/centro-main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .projectsBox img {

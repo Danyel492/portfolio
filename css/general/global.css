@@ -20,15 +20,16 @@ a {
     --laranja: #F97B22;
 }
 
+:root {
+    --corHamburguerIcon: var(--ciano) ;
+}
+
+
 
 body {
     display: flex;
     flex-direction: column;
     font-family: SUSE;
-    background-image: url('../../img/centro-main.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80vw;
     color: white;
     justify-content: center;
     background-color: #15202c;
@@ -40,10 +41,7 @@ a {
 }
 
 
-nav a:hover {
-    text-decoration: underline;
-    color: var(--ciano)
-}
+
 
 main {
     height: auto;
@@ -59,8 +57,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #0C1118;
-    height: 50px;   
-    bottom: 0;
+    height: 50px;
 }
 
 .button {
@@ -68,7 +65,7 @@ footer {
     padding: 20px 50px;
     border-radius: 10px;
     border: 2px solid transparent;
-
+    
 }
 
 .button:hover {
@@ -82,28 +79,30 @@ header {
     height: auto;
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: #0C1118;
     background-size: cover;
+    box-shadow: 0 5px 10px #0C1118 ;
 }
 
 #logo {
     padding-top: 10px;
     display: flex;
     align-items: center;
-    width: 50%;
-
-
+    width: 40%;
+    
+    
 }
 
 nav {
     display: flex;
     align-items: center;
-
-
+    justify-content: space-around;
+    
+    
 }
+#hamburguerIcon{display:flex;align-items: center;}#hamburguerCheck{position:absolute;opacity:0;}#hamburguerIcon label{cursor:pointer;position:relative;display:block;height:22px;width:30px;}#hamburguerIcon label span{position:absolute;display:block;height:5px;width:100%;border-radius:30px;background:var(--corHamburguerIcon);transition:0.25s ease-in-out;}#hamburguerIcon label span:nth-child(1){top:0;}#hamburguerIcon label span:nth-child(2){top:8px;}#hamburguerIcon label span:nth-child(3){top:16px;}#hamburguerCheck:checked+label span:nth-child(1){transform:rotate(-45deg);top:8px;}#hamburguerCheck:checked+label span:nth-child(2){opacity:0;}#hamburguerCheck:checked+label span:nth-child(3){transform:rotate(45deg);top:8px;}
 
 nav ul {
     display: flex;
@@ -125,14 +124,81 @@ nav ul {
     padding: 5px 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
+    text-decoration: underline;
+    color: var(--ciano)
+    
+}
+.nav-item:hover {
+    color: var(--ciano);
+    background-color: #131b25;
+    
+}
+.contatoItem {
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+}
+.contatoItem:hover {
+    background-color: #25D366;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
 }
 .sectionHome {
     /* border: 1px solid red; */
     height: 85vh;
-
+    
 }
 .projetos {
     padding: 0 50px;
     text-align: center;
+}
+#hamburguerIcon {
+    display: none;
+}
+.mobileMenu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    
+    #nav-sup {
+        padding: 1.5rem 4rem;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+    
+    #hamburguerIcon {
+        display: flex;
+    }
+    
+    .mobileMenu ul { 
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileMenu .nav-item {
+        text-align: center;
+        padding: 20px;
+        
+    }
+    
+    .openMenu {
+        display: block;
+    }
+}
+
+#contatoItem:hover {
+    background-color: #25D366;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mobileMenu a {
+    padding: 20px 40%;
 }
