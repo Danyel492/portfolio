@@ -164,12 +164,17 @@ nav ul {
 
 @media screen and (max-width: 730px) {
     
-    #nav-sup {
-        padding: 1.5rem 4rem;
+    header {
+        display: flex;
+        justify-content: space-between;
     }
     
     .nav-items {
         display: none;
+    }
+    
+    nav {
+        padding-right: 10%;
     }
     
     #hamburguerIcon {
