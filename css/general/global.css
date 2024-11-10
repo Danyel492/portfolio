@@ -35,7 +35,9 @@ body {
     background-color: #15202c;
 }
 
-
+#container {
+    width: 100%;
+}
 a {
     color: white;
 }
@@ -44,13 +46,19 @@ a {
 
 
 main {
+    
+    max-width: 2400px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+.projetos img {
+    width: 100%;
+    height: auto;
+}
 footer {
     width: 100%;
     display: flex;
@@ -155,6 +163,18 @@ nav ul {
     padding: 0 50px;
     text-align: center;
 }
+
+.projetosMain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projectsBox {
+    
+max-width: 30rem;
+}
+
 #hamburguerIcon {
     display: none;
 }
