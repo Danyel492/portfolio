@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0C1118">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pages/index.css">
     <link rel="stylesheet" href="css/general/normalize.css">
@@ -22,12 +23,17 @@
             <nav id="nav-sup">
                 <ul>
                     <li class="nav-items">
-                        <a href="#">
+                        <a href="index.html">
                             home
                         </a>
                     </li>
                     <li class="nav-items">
-                        <a href="projetos.html">
+                        <a href="#sobreMim">
+                            sobre
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#projetos">
                             projetos
                         </a>
                     </li>
@@ -55,7 +61,13 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="projetos.html">
+                        <a href="#sobreMim">
+                            sobre
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projetos">
                             projetos
                         </a>
                     </li>
@@ -66,13 +78,68 @@
             </div>
         </header>
         <main>
-            <section class="sectionHome">
+            <section id="home" class="sectionHome">
                 <div class="saldacao">
                     <img id="hallo" src="img/mao.png">
                     <span>Bem vindos!</span>
                 </div>
-                <p class="desculpe">... desculpe o transtorno. Estamos e manutenção ...</p>
-                <h3>Volte em breve</h3>
+            </section>
+            <section id="sobreMim">
+                <h2>Sobre mim</h2>
+                <img class="imgPerfil" src="https://github.com/Danyel492.png" alt="">
+                <article class="sobreMim">
+                    <div>
+                        <h3>Olá...</h3>
+                        <p>Meu nome é Danyel. Sim, com "y" mesmo.</p>
+                        <p>A tecnologia é minha paixão e a programação, minha forma de expressar essa paixão. Desde
+                            2019, estou em constante aprendizado, explorando novas ferramentas e técnicas para criar
+                            experiências digitais cada vez mais inovadoras.</p>
+                        <p>Meus projetos, tanto os de estudo quanto os sob demanda, são a prova do meu compromisso com a
+                            inovação e a busca constante por novos desafios. Explore meu portfólio e descubra como posso
+                            transformar suas ideias em realidade!</p>
+                        <p>Para mais informações, pode baixar meu CV <a
+                                style="color: var(--ciano); text-decoration: underline;"
+                                href="https://drive.google.com/file/d/1JZU2YzMS6L7EdaP7tGRs0HrAYrOvfDxr/view?usp=drivesdk">aqui</a>.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section id="conhecimentos">
+                <h2>Conhecimentos</h2>
+                <div class="conhecimentos">
+                    <div>
+                        <img src="img/html5.png" alt="icone HTML5">
+                        <img src="img/css3.png" alt="icone CSS3">
+                        <img src="img/js.png" alt="icone JavaScript">
+                    </div>
+                    <div>
+                        <img src="img/bootstrap.png" alt="icone Bootstrap">
+                        <img src="img/react.png" alt="icone React.js">
+                    </div>
+                    <div>
+                        <img src="img/git.png" alt="icone Git">
+                        <img src="img/github.png" alt="icone GitHub">
+                    </div>
+                    <div>
+                        <img src="img/node.png" alt="icone Node.js">
+                    </div>
+                </div>
+                <h2>Soft e hard skills</h2>
+                ..Em desenvolvimeto..
+            </section>
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <!-- <article class="projetos">
+                    <h1>Registro de Tarefas</h1>
+                    <div class="projectsBox">
+                        <a href="https://danyel492.github.io/registro_tarefas/" target="_blank"><img
+                                src="img/img-reg-tar.png" alt=""></a>
+                    </div>
+                    <h4>...em desenvolvimento...</h4>
+                </article> -->
+                <article>
+                    ..Em Desenvolvimento..
+                </article>
             </section>
 
         </main>
