@@ -246,8 +246,9 @@ nav ul {
 }
 
 .sectionHome {
-    /* border: 1px solid red; */
     height: 85vh;
+    display: flex;
+    align-self: center;
 
 }
 
