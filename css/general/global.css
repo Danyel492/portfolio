@@ -18,6 +18,7 @@ a {
     --ciano: #6ee2ff;
     --branco: #fff;
     --laranja: #F97B22;
+    --verde: #25d366;
 }
 
 :root {
@@ -30,9 +31,13 @@ body {
     display: flex;
     flex-direction: column;
     font-family: SUSE;
-    color: white;
+    color: var(--branco);
     justify-content: center;
     background-color: #15202c;
+}
+
+.icones {
+    width: 25px;;
 }
 
 #container {
@@ -40,7 +45,7 @@ body {
     height: 100dvh;
 }
 a {
-    color: white;
+    color: var(--branco);
 }
 
 
@@ -63,6 +68,7 @@ main {
 footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #0C1118;
@@ -78,9 +84,9 @@ footer {
 }
 
 .button:hover {
-    background-color: #25D366;
+    background-color: var(--verde);
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid var(--branco);
 }
 
 header {
@@ -149,7 +155,7 @@ nav ul {
     padding: 20px;
 }
 .contatoItem:hover {
-    background-color: #25D366;
+    background-color: var(--verde);
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -220,7 +226,7 @@ max-width: 30rem;
 }
 
 #contatoItem:hover {
-    background-color: #25D366;
+    background-color: var(--verde);
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
