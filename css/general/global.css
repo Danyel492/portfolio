@@ -54,7 +54,7 @@ body {
 }
 .conhecimentos div img {
     width: 5rem;
-    margin: 10px 50px;
+    margin: 10px 20px;
 }
 
 .meuNome span {
@@ -64,7 +64,6 @@ body {
 
 .icones {
     width: 25px;
-    ;
 }
 
 #container {
@@ -262,7 +261,7 @@ nav ul {
 }
 
 .sobreMim{
-    max-width: 500px;
+    max-width: 800px;
 }
 
 #sobreMim img {
@@ -277,6 +276,28 @@ nav ul {
     justify-content: center;
 }
 
+.softSkills{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.softSkills ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 20px;
+}
+
+.softSkills li {
+    list-style: circle;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+#projetos{
+    text-align: center;
+    padding: 100px;
+}
 .projetos {
     padding: 0 50px;
     text-align: center;
