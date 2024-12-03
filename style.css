@@ -382,15 +382,20 @@ main {
     flex-direction: column;
 }
 
-.projetosDemanda {
+.projetosDemanda, .projetosEstudos, .projetosEscondidos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+#projetosEscondidos{
+    display: none;
+}
+
 .caixaProjetos{
-    border-radius: 0 1rem;
+    box-shadow: 0 5px 10px #0C1118;
+    border-radius: 0 5rem;
     background-color: #2f3742;
     min-width: 390px;
     min-height: 220px;
@@ -430,4 +435,20 @@ footer {
     display: flex;
     flex-direction: row;    align-items: center;
     padding-bottom: 5px;
+}
+/*------------------------------------------------Botoes especiais*/
+
+#btnMostrarMais{
+    display: block;
+    padding: 10px 15px;
+    background: white;
+    border: 2px solid var(--ciano);
+    border-radius: 0.4rem;
+}
+
+#btnMostrarMais:hover {
+    background: var(--ciano);
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
 }
