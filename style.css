@@ -1,6 +1,7 @@
-/* Arquivo global.css para colocar as configuraçõs gerais de todas as paginas*/
+/*------------------------------------------------Importações*/
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+/*------------------------------------------------Estilizações Gerais*/
 body,
 html,
 ul,
@@ -37,35 +38,6 @@ body {
     background-color: #15202c;
 }
 
-.meuNome {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-
-#conhecimentos{
-    color: black;
-    background-color: var(--branco);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.conhecimentos div img {
-    width: 5rem;
-    margin: 10px 20px;
-}
-
-.meuNome span {
-    box-sizing: border-box;
-    border: 1px solid red;
-}
-
-.icones {
-    width: 25px;
-}
-
 #container {
     width: 100%;
     height: 100dvh;
@@ -75,33 +47,7 @@ a {
     color: var(--branco);
 }
 
-
-
-
-main {
-    max-width: 2400px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projetos img {
-    width: 100%;
-    height: auto;
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #0C1118;
-    height: 50px;
-}
-
+/*------------------------------------------------Cabeçalho*/
 .button {
     background-color: var(--ciano);
     padding: 20px 50px;
@@ -209,7 +155,6 @@ nav ul {
 }
 
 .nav-items a {
-    /* background-color: green; */
     padding: 5px 20px;
     border-radius: 20px;
 }
@@ -245,76 +190,7 @@ nav ul {
     padding: 20px;
 }
 
-.sectionHome {
-    height: 85vh;
-    display: flex;
-    align-self: center;
-
-}
-
-#sobreMim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #2f3742;
-    padding: 30px;
-}
-
-.sobreMim{
-    max-width: 800px;
-}
-
-#sobreMim img {
-    border-radius: 50%;
-    border: 4px solid var(--ciano);
-}
-
-.imgPerfil {
-    max-width: 15rem;
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.softSkills{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.softSkills ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px 20px;
-}
-
-.softSkills li {
-    list-style: circle;
-    margin-bottom: 10px;
-    text-align: left;
-
-}
-#projetos{
-    text-align: center;
-    padding: 100px;
-}
-.projetos {
-    padding: 0 50px;
-    text-align: center;
-}
-
-.projetosMain {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.projectsBox {
-
-    max-width: 30rem;
-}
-
+/*------------------------------------------------Cabeçalho Mobile*/
 #hamburguerIcon {
     display: none;
 }
@@ -368,4 +244,181 @@ nav ul {
 
 .mobileMenu a {
     padding: 20px 40%;
+}
+
+/*------------------------------------------------Saldação*/
+.sectionHome{
+    width: 90%;
+    height: 85vh;
+    max-width: 1640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../../img/centro-main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    align-self: center;
+}
+
+main {
+    max-width: 2400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+#hallo {
+
+    width: 30px;
+    animation: animacaoHallo 0.5s;
+    animation-iteration-count: 12;
+    animation-direction: alternate;
+  
+}
+
+@keyframes animacaoHallo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(50deg);
+    }
+}
+
+.saldacao {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.saldacao span {
+    font-size: 30px;
+}
+
+/*------------------------------------------------Sobre*/
+.meuNome {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.meuNome span {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+#conhecimentos {
+    color: black;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conhecimentos div img {
+    width: 5rem;
+    margin: 10px 20px;
+}
+
+.icones {
+    width: 25px;
+}
+
+#sobreMim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2f3742;
+    padding: 30px;
+}
+
+.sobreMim {
+    max-width: 800px;
+}
+
+#sobreMim img {
+    border-radius: 50%;
+    border: 4px solid var(--ciano);
+}
+
+.imgPerfil {
+    max-width: 15rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.softSkills {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.softSkills ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 20px;
+}
+
+.softSkills li {
+    list-style: circle;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+/*------------------------------------------------Projetos*/
+.projetos img {
+    width: 100%;
+    height: auto;
+}
+
+#projetos {
+    text-align: center;
+    
+}
+
+.projetos {
+    padding: 0 50px;
+    text-align: center;
+}
+
+.projetosMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projectsBox {
+
+    max-width: 30rem;
+}
+.projectsBox img {
+    height: 500px;
+}
+
+/*------------------------------------------------Rodapé*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C1118;
+    height: 50px;
+    padding: 10px;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: row;    align-items: center;
+    padding-bottom: 5px;
 }
