@@ -376,35 +376,9 @@ main {
 }
 
 /*------------------------------------------------Projetos*/
-.projetos img {
-    width: 100%;
-    height: auto;
-}
-
 #projetos {
     text-align: center;
-    
 }
-
-.projetos {
-    padding: 0 50px;
-    text-align: center;
-}
-
-.projetosMain {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.projectsBox {
-
-    max-width: 30rem;
-}
-.projectsBox img {
-    height: 500px;
-}
-
 /*------------------------------------------------Rodapé*/
 footer {
     width: 100%;
