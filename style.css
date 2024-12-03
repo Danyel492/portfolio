@@ -378,6 +378,41 @@ main {
 /*------------------------------------------------Projetos*/
 #projetos {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetosDemanda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caixaProjetos{
+    border-radius: 0 1rem;
+    background-color: #2f3742;
+    min-width: 390px;
+    min-height: 220px;
+    max-width: 640px;
+    max-height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.caixaProjetos img {
+    width: 60%;
+    overflow: hidden;
+}
+.caixaProjetos p{
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 /*------------------------------------------------Rodapé*/
 footer {
