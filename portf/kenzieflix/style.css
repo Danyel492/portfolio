@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+#container {
+    height: auto;
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    margin: 50px;
+   text-align: center;
+}
+#texto {
+    margin: 50px;
+    text-align: center;
+    color: white;
+}
+#perfis {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#prf4 {
+    opacity: 0.5;
+}
+
+#prf4:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#perfis img {
+    border-radius: 10px;
+    border: 2px solid transparent;
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#perfis img:hover {
+    border: 2px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+#botao label {
+    border: 2px solid white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+#botao label:hover {
+    background: white;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}

@@ -405,6 +405,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     overflow: hidden;
     margin-bottom: 15px;
 }
@@ -414,6 +415,7 @@ main {
     border: 4px solid var(--ciano);
     color: #2f3742;
     transition: 200ms;
+    cursor: pointer;
 }
 
 .caixaProjetos img {
@@ -423,9 +425,11 @@ main {
 .caixaProjetos p{
     width: 40%;
     text-align: justify;
-    display: flex;
-    align-items: center;
     padding: 20px;
+}
+
+.projetosDemanda .caixaProjetos {
+    cursor: not-allowed;
 }
 /*------------------------------------------------Rodapé*/
 footer {
