@@ -419,7 +419,9 @@ main {
 
 .caixaProjetos img {
     width: 60%;
+    min-height: 100%;
     overflow: hidden;
+    object-fit: cover;
 }
 .caixaProjetos p{
     width: 40%;
