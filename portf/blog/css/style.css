@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Limpar Formatacao padrao */
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #E6E6E6;
+}
+.clear {
+    clear: both;
+}
+/* início do Cabecalho */
+#cabecalho {
+    background: #f7b600;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#logo label {
+    color: #4e4e4e;
+}
+#logo {
+
+    font-weight: bold;;
+    padding: 10px;
+}
+#logo h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+.branco {
+    color: white;
+}
+/* Fim do Cabecalho */
+/* Início do menu */
+#menu {
+    
+    
+}
+#menu a:hover {
+    background: white;
+    color: #f7b600;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+/* Fim do Menu */
+/* Inicio principal e postagens */
+#container {
+    /* border: solid red 1px; */
+    padding: 15px;
+    margin: 0px auto;
+    width: 920px;
+}
+#postagens {
+    width: 660px;
+    float: left;
+}
+.postagem{
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px
+
+}
+.postagem label {
+    font-size: small;
+}
+.postagem img {
+    width: 620px;
+}
+.postagem h2 {
+    color: #f7b600;
+    margin-top: 2px;
+    margin-bottom: 0px;
+ }
+
+ a {
+    text-decoration: none;
+    color: #f7b600;
+ }
+ a:hover {
+    text-decoration: underline;
+ }
+ .data-postagem {
+    font-size: 0.8em;
+    border-bottom: solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+ }
+ /* Fim Principal e postagens */
+ /* Inicio menu lateral */
+ #menuLateral {
+    width: 240px;
+    float: right;
+    
+ }
+ #menuLateral a {
+    text-decoration: none;
+    color: #f7b600;
+ }
+ #menuLateral a:hover {
+    text-decoration: underline;
+ }
+ #menuLateral h3 {
+    color: #565656;
+ }
+ #menuLateral p {
+    font-size: small;
+ }
+ /* Fim menu lateral */
+ /* Inicio postagens recentes */
+.postagem-lateral {
+    margin: 0px;
+
+    font-size: 0.8em;
+}
+.postagem-lateral a {
+    border-bottom: #4e4e4e dotted 1px;
+    display: block;
+ }
+ .caixa-lateral {
+    background: white;
+    margin-bottom: 20px;
+    padding: 10px;
+ }
+ .caixa-lateral h3 {
+    background: #CCC;
+    padding: 5px;
+    font-size: 1.2em;
+ }
+ /* Fim postagens recentes */
+ /* Iniciao Categorias */
+ .categorias {
+    background: white;
+    margin: 0px;
+    
+ }
+ /* Fim Categorias */
+ /* Inicio Rodapé */
+ #rodape {
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+ }
+ /* Fim rodapé */
+ 

@@ -378,6 +378,58 @@ main {
 /*------------------------------------------------Projetos*/
 #projetos {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetosDemanda, .projetosEstudos, .projetosEscondidos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#projetosEscondidos{
+    display: none;
+}
+
+.caixaProjetos{
+    box-shadow: 0 5px 10px #0C1118;
+    border: 4px solid transparent;
+    border-radius: 0 5rem;
+    background-color: #2f3742;
+    min-width: 390px;
+    min-height: 220px;
+    max-width: 640px;
+    max-height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.caixaProjetos:hover {
+    background-color: var(--ciano);
+    border: 4px solid var(--ciano);
+    color: #2f3742;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.caixaProjetos img {
+    width: 60%;
+    overflow: hidden;
+}
+.caixaProjetos p{
+    width: 40%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.projetosDemanda .caixaProjetos {
+    cursor: not-allowed;
 }
 /*------------------------------------------------Rodapé*/
 footer {
@@ -395,4 +447,21 @@ footer {
     display: flex;
     flex-direction: row;    align-items: center;
     padding-bottom: 5px;
+}
+/*------------------------------------------------Botoes especiais*/
+
+#btnMostrarMais{
+    display: block;
+    padding: 10px 15px;
+    background: none;
+    color: var(--ciano);
+    border: none;
+    border-bottom: 4px solid var(--ciano);
+}
+
+#btnMostrarMais:hover {
+    background: var(--ciano);
+    cursor: pointer;
+    color: #2f3742;
+    text-decoration: underline;
 }
