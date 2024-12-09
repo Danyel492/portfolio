@@ -5,7 +5,7 @@ html {
 body {
     background-image: url(imagens/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 130dvh;
+    background-size: 100%;
 }
 
 .mosquito1 {
@@ -44,4 +44,10 @@ body {
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 930px) {
+    body {
+        background-size: 150dvh;
+    }
 }
