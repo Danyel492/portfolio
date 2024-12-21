@@ -50,4 +50,8 @@ body {
     body {
         background-size: 150dvh;
     }
+    
+    .goimg, .ywimg {
+        width: 100%;
+    }
 }
