@@ -17,8 +17,14 @@ body {
 
 header{
     margin: 50px;
-   text-align: center;
+    text-align: center;
 }
+
+header img {
+    width: 100%;
+    max-width: 300px;
+}
+
 #texto {
     margin: 50px;
     text-align: center;
@@ -30,6 +36,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 350px;
 }
 
 #prf4 {
@@ -44,7 +52,8 @@ header{
 #perfis img {
     border-radius: 10px;
     border: 2px solid transparent;
-    width: 160px;
+    max-width: 160px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 15px;
