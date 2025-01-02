@@ -2,10 +2,19 @@ html {
     cursor: url(imagens/mata_mosquito.png) 30 30, auto ;
 }
 
+.principais {
+    height: 100wvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 body {
     background-image: url(imagens/bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: inherit;
 }
 
 .mosquito1 {
@@ -46,7 +55,7 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1140px) {
     body {
         background-size: 150dvh;
     }
@@ -54,4 +63,9 @@ body {
     .goimg, .ywimg {
         width: 100%;
     }
+}
+
+.imgMosquito {
+    width: 100%;
+    max-width: 490px;
 }
