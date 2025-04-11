@@ -8,26 +8,74 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/fav-icon-danyeldev.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>DanyelDev</title>
 
 </head>
 
 <body>
     <div id="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/">
-              <img src="img/logo-danyeldev.png" width="240px" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            </a>
-      
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-          </header>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo-danyeldev.png" width="240px" alt=""></a>
+            </div>
+
+            <nav id="nav-sup">
+                <ul>
+                    <li class="nav-items">
+                        <a href="index.html">
+                            home
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#sobreMim">
+                            sobre
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#projetos">
+                            projetos
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a id="contatoItem" href="https://wa.me/5518981280390">contato</a>
+
+
+                    </li>
+                </ul>
+                <div id="hamburguerIcon">
+                    <input type="checkbox" id="hamburguerCheck" onchange="menuShow()">
+                    <label for="hamburguerCheck">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </nav>
+            <div class="mobileMenu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html">
+                            home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#sobreMim">
+                            sobre
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projetos">
+                            projetos
+                        </a>
+                    </li>
+                    <li class="contatoItem">
+                        <a href="https://wa.me/5518981280390">contato</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <main>
             <!-- ToDo: Melhorar apresentação de boas vindas -->
             <section id="home" class="sectionHome">
@@ -150,21 +198,24 @@
 
                 <!-- Projetos de estudo visivel -->
 
-                <h2><u>Outros projetos</u></h2>
+                <h2><u>Projetos de estudos</u></h2>
                 <div class="projetosEstudos">
-                    <a href="https://www.cms.danyeldev.com" target="_blank">
-                        <article class="caixaProjetos">
-                            <img src="img/tnCms.png" alt="imagem do projeto de sistema de gestão de conteúdo">
-                            <p>CMS+ - Sistema completo de gestão de conteúdo com moderação e administração de usuários com <strong>front-end e back-end</strong>. Projeto está em produção e pode ser usado normalmente.<br><br>
-                                <u>.. clique para acessar ..</u>
-                            </p>
-                        </article>
-                    </a>
                     <a href="./portf/finans/index.html" target="_blank">
                         <article class="caixaProjetos">
                             <img src="img/tnFinans.png" alt="imagem do projeto de landing page para o atleta Vinicius">
                             <p>Estudo: Projeto baseado em <strong>Bootstrap</strong> de uma fintec ficticia de nome
                                 Finans.<br><br>
+                                <u>.. clique para acessar ..</u>
+                            </p>
+                        </article>
+                    </a>
+
+                    <a href="./portf/travelgram/index.html" target="_blank">
+                        <article class="caixaProjetos">
+                            <img src="img/tnTravelgram.png"
+                                alt="imagem do projeto de landing page para o atleta Vinicius">
+                            <p>Estudo: Projeto de uma página de postagem de fotografias de viagens ficticia chamada
+                                Travelgram, com intuito de aperfeiçoar diagramação e alinhamento.<br><br>
                                 <u>.. clique para acessar ..</u>
                             </p>
                         </article>
@@ -198,17 +249,16 @@
                         <!-- Projeto de estudo oculto -->
 
                         <div id="projetosEscondidos" class="projetosEscondidos">
-                            <a href="./portf/travelgram/index.html" target="_blank">
+                            <a href="https://danyel492.github.io/login-page/" target="_blank">
                                 <article class="caixaProjetos">
-                                    <img src="img/tnTravelgram.png"
-                                        alt="imagem do projeto de landing page para o atleta Vinicius">
-                                    <p>Estudo: Projeto de uma página de postagem de fotografias de viagens ficticia chamada
-                                        Travelgram, com intuito de aperfeiçoar diagramação e alinhamento.<br><br>
-                                        <u>.. clique para acessar ..</u>
+                                    <img src="img/tnLoginPage.png"
+                                        alt="imagem do projeto de pagina de login criada com React">
+                                    <p>Estudo: Projeto de uma pagina simples de login criada com
+                                        <strong>React</strong>.<br><br>
+                                        .. clique para acessar ..
                                     </p>
                                 </article>
                             </a>
-                            
                             <a href="./portf/calculadora/index.html" target="_blank">
                                 <article class="caixaProjetos">
                                     <img src="img/tnCalculadora.png"
@@ -252,11 +302,7 @@
         </footer>
     </div> <!-- FIM CONTAINER -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
-
-<!-- <div class="container">
-    
-  </div> -->
